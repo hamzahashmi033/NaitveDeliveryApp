@@ -11,7 +11,7 @@ export default function Restaurant() {
     const { params } = useRoute()
     return (
         <View>
-            <CartIcon/>
+            <CartIcon />
             <ScrollView>
                 <View className="relative">
                     <Image className="w-full h-72" source={params.image} />
@@ -44,9 +44,9 @@ export default function Restaurant() {
                     <Text className="px-4 py-4 text-3xl text-black font-bold">Menu</Text>
                     {/* dishes */}
                     {
-                        params.dishes.map((dish,index)=>{
-                            return(
-                                <DishRow key={index} item={{...dish}}/>
+                        params.dishes.map((dish, index) => {
+                            return (
+                                <DishRow key={index} item={{ ...dish }} />
                             )
                         })
                     }

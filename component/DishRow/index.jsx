@@ -17,7 +17,7 @@ export default function DishRow({ item }) {
                 </View>
                 <View className="flex-row justify-between pl-3 items-center">
                     <Text className="text-gray-700 text-lg font-bold">
-                        $20
+                        ${item.price}
                     </Text>
                     <View className="flex-row items-center">
                         <TouchableOpacity
